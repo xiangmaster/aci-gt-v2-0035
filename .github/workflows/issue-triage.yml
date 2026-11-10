@@ -72,3 +72,5 @@ jobs:
           --model claude-sonnet-4-6
           --allowedTools "Read,Bash(gh issue comment:*),Bash(gh issue edit:*),Bash(gh search issues:*),Bash(find:*),Bash(grep:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(ls:*)"
           --max-turns 15
+env:
+  ANTHROPIC_BASE_URL: ${{ secrets.ANTHROPIC_BASE_URL }}
